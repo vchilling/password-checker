@@ -1,4 +1,4 @@
-# reg-form
+# Password checker
 
 A register form 
 
@@ -7,3 +7,8 @@ Animated strength of the password and matching between password field and confir
 Responsive
 
 JavaScript, CSS3, HTML
+
+
+Demo
+
+https://vchilling.github.io/reg-form/
