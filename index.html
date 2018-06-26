@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Training</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=1" />
+    <link rel="stylesheet" type="text/css" href="styles/reg-form.css">
+    <script type="text/javascript" src="javascript/strength.js"></script>
+    <script type="text/javascript" src="javascript/match.js"></script>
+        
+</head>
+
+<body>
+    <div class="form-style">
+        <h1>Password Checker</h1>
+        <form method="post" action="http://weshineacademy.com/wp-content/uploads/2018/03/thankyou-interest_3058089c.jpg" name="reader_registration" id="reader_registration">  
+            <div class="section"><span>1</span>First &amp; last name</div> 
+            <div class="inner-wrap">
+                <label>First Name:<input type="text" name="fname" id="name" required /></label>            
+                <label>Last Name:<input type="text" name="lname" id="surname" required /></label>
+            </div>
+
+            <div class="section"><span>2</span>User name &amp; E-mail</div> 
+            <div class="inner-wrap">
+                <label>UserName:<input type="text" name="username" required /></label>
+                <label>E-mail:<input type="email" name="email" id="email" required /></label>
+            </div> 
+
+            <div class="section"><span>3</span>Password</div> 
+            <div class="inner-wrap">
+                <label>Password:<input type="password" name="pass" id="pass" onkeyup="strength(this.value)+ match(this.value,pass2.value)" required /></label>
+                <label>Confirm PW:<input type="password" name="pass2" id="pass2" onkeyup="match(this.value,pass.value)" ) required /></label>           
+                <div id="match"><img src="images/notsame.png"> Passwords Do Not Match</div>
+            </div>
+
+            <div class="section">Password Strength:</div> 
+            <div class="inner-wrap" id="pb45">
+                <div id="pwdesc">Very Weak</div>
+                <div id="pwstrength" class="strength0"></div>       
+            </div>
+
+            <div class="section"><span>4</span>Register</div> 
+            <div class="inner-wrap">
+                <input type="submit" name="submit" id="submit" value="Register" />                        
+                <div class="privacy-policy">  
+                <input type="checkbox" id="myCheckbox" required />                      
+                You agree to our Terms and Policy.
+                </div>
+            </div>
+        </form>
+        <script type="text/javascript" src="javascript/register.js"></script>
+    </div>
+    
+</body>
+
+</html>
