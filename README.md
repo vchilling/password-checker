@@ -11,4 +11,4 @@ JavaScript, CSS3, HTML
 
 Demo
 
-https://vchilling.github.io/reg-form/
+https://vchilling.github.io/password-checker/
